@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Norse-bold;
+    src: url("Norse-Bold.otf");
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -38,7 +43,6 @@ body .right .content .user-details {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    flex: 0.8;
 }
 
 body .right .content .user-details .title {
@@ -64,12 +68,21 @@ body .right .content .user-details .inputs {
     border-color: #E5E7EB;
 }
 
-.right .content .user-details input:focus{
+.right .content .user-details input:focus {
     outline: none;
     border-width: 1px;
     border-radius: 5px;
     border-color: blue;
-    box-shadow: 3px 3px 10px #afafaf;;
+    box-shadow: 3px 3px 10px #afafaf;
+}
+
+.right .content .user-details input.error {
+    border-color: red;
+}
+
+.right .content .user-details div.error {
+    font-size: 0.6rem;
+    color: red;
 }
 
 body .right .content .footer {
@@ -77,6 +90,7 @@ body .right .content .footer {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
+    opacity: 0.9;
 }
 
 button.submit {
@@ -96,6 +110,29 @@ button.submit {
     font-size: 0.8rem;
 }
 
+.log-in > span {
+    color: #596D48;
+}
 
+.right .user-container {
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+    box-shadow: 0 7px 10px #1c1c1c;
+}
 
+.header > div {
+    /*font-family: ;*/ /* to be styled later, browser have internet connection issue. */
+    font-weight: 600;
+    width: 700px;
+    padding-left: 50px;
+    margin-top: 20px;
+}
 
+.header > .text {
+    padding-top: 100px;
+}
+
+.italic {
+    font-style: italic;
+}
