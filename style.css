@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body .left {
+    flex: 1.3;
+    background-image: url("green_plant.avif");
+    background-size: cover;
+}
+
+body .right {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+body .right .header {
+    background-color: whitesmoke;
+    flex: 1;
+}
+
+body .right .content {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+body .right .content form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+body .right .content .user-details {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 0.8;
+}
+
+body .right .content .user-details .title {
+    font-size: 1.2rem;
+}
+
+body .right .content .user-details .row {
+    display: flex;
+    gap: 100px;
+}
+
+body .right .content .user-details .inputs {
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.right .content .user-details input { /* being too specific will cause trouble later on when using pseudo class */
+    border-width: 1px;
+    border-radius: 5px;
+    /*border-color: blue;*/
+    border-color: #E5E7EB;
+}
+
+.right .content .user-details input:focus{
+    outline: none;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: blue;
+    box-shadow: 3px 3px 10px #afafaf;;
+}
+
+body .right .content .footer {
+    flex: 1;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+button.submit {
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-self: flex-start;
+    padding: 15px 50px;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+}
+
+.footer .log-in {
+    padding-left: 50px;
+    font-size: 0.8rem;
+}
+
+
+
+
